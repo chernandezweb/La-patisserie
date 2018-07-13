@@ -22,13 +22,16 @@
 		padding: 0;
 		position: relative;
 	}
-	/*#body.home div.header  {
+	#body.home div.header  {
 		background-image: url("../images/bg-home-mobile.jpg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
-	}*/
+	}
 	#body.home div.header img {
+		display: none;
+	}
+	/*#body.home div.header img {
 		display: block;
 		height: 25%;
 		left: 0;
@@ -36,7 +39,7 @@
 		padding: 0;
 		position: absolute;
 		width: 100%;
-	}
+	}*/
 	#body.home div.header div a {
 		margin: 0 auto;
 		padding: 52px 0 0;
@@ -266,6 +269,24 @@
 		padding: 87px 0 0 0;
 	}
 
+	.city{
+		width: 100%;
+		text-align: center !important;
+		padding-left: 20px !important;
+	}
+	.card{
+		padding-bottom: 20px !important;
+	}
+
+	.card-header{
+		padding-left: 0 !important;
+		text-align: center;
+	}
+	.card-body, .collapse{
+		margin: 0 0 0 0 !important;
+		padding: 0 !important;
+	}
+
 }
 
 @media only screen and (min-width : 295px) and (max-width : 868px) {
@@ -446,10 +467,19 @@
 		width: auto;
 	}
 
+	.card-body ul li {
+		height: inherit;
+margin-bottom: 10px !important;
+	}
+
+	#body div .province{
+		font-size: 25px
+	}
+
 }
 
 @media only screen and (max-width : 368px) {
-	.header{
-		height: 300px;
+	#header{
+		height: 200px;
 	}
 }
